@@ -22,9 +22,11 @@ body, html {
     z-index: 1000;
     border-bottom: 1px solid #202020;
     background-color: white;
-    color: #606060; }
+    color: #606060;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; }
     .wrapper header:hover {
-      background-color: #202020;
+      background-color: #333;
       color: white; }
       .wrapper header:hover .light1 {
         color: #ffffe3; }
@@ -86,6 +88,24 @@ body, html {
         box-sizing: border-box; }
   .wrapper .colors-wrapper {
     padding-top: 80px; }
+    .wrapper .colors-wrapper .percentage {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      position: -webkit-sticky;
+      position: sticky;
+      top: 80px;
+      width: 90%;
+      margin: 0 auto;
+      z-index: 500;
+      background-color: #fafafa; }
+      .wrapper .colors-wrapper .percentage div {
+        width: 4.76191%;
+        text-align: center;
+        color: #c0c0c0;
+        padding: 1rem 0;
+        overflow: hidden;
+        font-size: 1.2vw; }
     .wrapper .colors-wrapper .colors {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -102,7 +122,8 @@ body, html {
         text-align: center;
         line-height: 50px;
         font-size: 0.8vw;
-        overflow: hidden; }
+        overflow: hidden;
+        cursor: copy; }
         .wrapper .colors-wrapper .colors .color:hover {
           -webkit-transform: scale(1.5);
           -ms-transform: scale(1.5);
@@ -111,10 +132,9 @@ body, html {
           border: 2px solid white;
           -webkit-box-sizing: border-box;
           box-sizing: border-box;
-          z-index: 100;
-          cursor: pointer;
-          -webkit-box-shadow: 0px 5px 10px #404040;
-          box-shadow: 0px 5px 10px #404040; }
+          z-index: 600;
+          -webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5); }
         .wrapper .colors-wrapper .colors .color:before {
           content: "";
           display: block;
@@ -127,4 +147,12 @@ body, html {
           bottom: 0;
           right: 0; }
     .wrapper .colors-wrapper .select {
-      padding: 50px 0; }
+      padding: 50px 0 0; }
+
+footer {
+  height: 100px;
+  color: #606060;
+  text-align: center;
+  line-height: 100px; }
+  footer p {
+    margin: 0; }

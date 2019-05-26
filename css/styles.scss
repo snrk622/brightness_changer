@@ -19,8 +19,9 @@ body, html {
         border-bottom: 1px solid #202020;
         background-color: white;
         color: #606060;
+        box-sizing: border-box;
         &:hover {
-            background-color: #202020;
+            background-color: #333;
             color: white;
             .light1 {
                 color: #ffffe3;
@@ -94,6 +95,23 @@ body, html {
     }
     .colors-wrapper {
         padding-top: 80px;
+        .percentage {
+            display: flex;
+            position: sticky;
+            top: 80px;
+            width: 90%;
+            margin: 0 auto;
+            z-index: 500;
+            background-color: #fafafa;
+            div {
+                width: 4.76191%;
+                text-align: center;
+                color: #c0c0c0;
+                padding: 1rem 0;
+                overflow: hidden;
+                font-size: 1.2vw;
+            }
+        }
         .colors {
             display: flex;
             width: 90%;
@@ -108,15 +126,15 @@ body, html {
                 line-height: 50px;
                 font-size: 0.8vw;
                 overflow: hidden;
+                cursor: copy;
                 &:hover {
                     transform: scale(1.5);
                     border-radius: 5px;
                     border: 2px solid white;
                     box-sizing: border-box;
                     // color: white;
-                    z-index: 100;
-                    cursor: pointer;
-                    box-shadow: 0px 5px 10px #404040;
+                    z-index: 600;
+                    box-shadow: 0px 5px 10px rgba(0,0,0,0.5);
                 }
                 &:before {
                     content:"";
@@ -133,7 +151,17 @@ body, html {
             }
         }
         .select {
-                padding: 50px 0;
+                padding: 50px 0 0;
             }
+    }
+}
+
+footer {
+    height: 100px;
+    color: #606060;
+    text-align: center;
+    line-height: 100px;
+    p {
+        margin: 0;
     }
 }
