@@ -4,155 +4,172 @@ body, html {
   padding: 0;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   background-color: #fafafa; }
-
-.wrapper {
-  margin: 0 auto 30px; }
-  .wrapper header {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 100%;
-    height: 80px;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    background: white;
-    position: fixed;
-    top: 0;
-    z-index: 1000;
-    border-bottom: 1px solid #202020;
-    background-color: white;
-    color: #606060;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box; }
-    .wrapper header:hover {
-      background-color: #333;
-      color: white; }
-      .wrapper header:hover .light1 {
-        color: #ffffe3; }
-      .wrapper header:hover .light3 {
-        color: #ffffcf; }
-      .wrapper header:hover .light5 {
-        color: #ffffbb; }
-      .wrapper header:hover .light7 {
-        color: #ffffa7; }
-      .wrapper header:hover .light9 {
-        color: #ffff93; }
-      .wrapper header:hover .light {
-        fill: #ffff7f; }
-    .wrapper header .title {
+  body .wrapper, html .wrapper {
+    margin: 0 auto 30px; }
+    body .wrapper header, html .wrapper header {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      width: 50%;
-      padding-left: 5%; }
-      .wrapper header .title h1 {
-        width: auto;
-        line-height: 80px;
-        margin: 0; }
-      .wrapper header .title .svg {
-        display: inline-block;
-        width: 48px; }
-        .wrapper header .title .svg svg {
-          width: 100%;
-          display: block;
-          margin: 16px auto; }
-    .wrapper header .color-select {
-      width: 15%;
-      padding: 0;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-pack: distribute;
-      justify-content: space-around;
-      padding-right: 5%; }
-      .wrapper header .color-select input[type="text"] {
-        display: inline-block;
-        width: 60%;
-        height: 30px;
-        border-radius: 5px;
-        border: 1px solid #e0e0e0;
-        -webkit-box-sizing: border-box;
-        box-sizing: border-box;
-        margin-top: 25px;
-        font-size: 16px;
-        padding: 7px 10px; }
-      .wrapper header .color-select input[type="color"] {
-        display: inline-block;
-        width: 30%;
-        height: 30px;
-        border-radius: 5px;
-        border: 1px solid #e0e0e0;
-        margin-top: 25px;
-        -webkit-box-sizing: border-box;
-        box-sizing: border-box; }
-  .wrapper .colors-wrapper {
-    padding-top: 80px; }
-    .wrapper .colors-wrapper .percentage {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      position: -webkit-sticky;
-      position: sticky;
-      top: 80px;
-      width: 90%;
-      margin: 0 auto;
-      z-index: 500;
-      background-color: #fafafa; }
-      .wrapper .colors-wrapper .percentage div {
-        width: 4.76191%;
-        text-align: center;
-        color: #c0c0c0;
-        padding: 1rem 0;
-        overflow: hidden;
-        font-size: 1.2vw; }
-    .wrapper .colors-wrapper .colors {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      width: 90%;
-      margin: 0 auto;
-      -ms-flex-pack: distribute;
-      justify-content: space-around; }
-      .wrapper .colors-wrapper .colors .color {
-        position: relative;
-        width: 4.76191%;
-        background-color: black;
-        color: transparent;
-        text-align: center;
-        line-height: 50px;
-        font-size: 0.8vw;
-        overflow: hidden;
-        cursor: copy; }
-        .wrapper .colors-wrapper .colors .color:hover {
-          -webkit-transform: scale(1.5);
-          -ms-transform: scale(1.5);
-          transform: scale(1.5);
+      width: 100%;
+      height: 80px;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      position: fixed;
+      top: 0;
+      z-index: 1000;
+      border-bottom: 1px solid #202020;
+      background-color: white;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box; }
+      @media screen and (max-width: 1023px) {
+        body .wrapper header, html .wrapper header {
+          background-color: #333;
+          color: white; }
+          body .wrapper header .light1, html .wrapper header .light1 {
+            color: #ffffe3; }
+          body .wrapper header .light3, html .wrapper header .light3 {
+            color: #ffffcf; }
+          body .wrapper header .light5, html .wrapper header .light5 {
+            color: #ffffbb; }
+          body .wrapper header .light7, html .wrapper header .light7 {
+            color: #ffffa7; }
+          body .wrapper header .light9, html .wrapper header .light9 {
+            color: #ffff93; }
+          body .wrapper header .light, html .wrapper header .light {
+            fill: #ffff7f; } }
+      @media screen and (min-width: 1024px) {
+        body .wrapper header, html .wrapper header {
+          background: white;
+          color: #606060; }
+          body .wrapper header:hover, html .wrapper header:hover {
+            background-color: #333;
+            color: white; }
+            body .wrapper header:hover .light1, html .wrapper header:hover .light1 {
+              color: #ffffe3; }
+            body .wrapper header:hover .light3, html .wrapper header:hover .light3 {
+              color: #ffffcf; }
+            body .wrapper header:hover .light5, html .wrapper header:hover .light5 {
+              color: #ffffbb; }
+            body .wrapper header:hover .light7, html .wrapper header:hover .light7 {
+              color: #ffffa7; }
+            body .wrapper header:hover .light9, html .wrapper header:hover .light9 {
+              color: #ffff93; }
+            body .wrapper header:hover .light, html .wrapper header:hover .light {
+              fill: #ffff7f; } }
+      body .wrapper header .title, html .wrapper header .title {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        width: 50%;
+        padding-left: 5%; }
+        body .wrapper header .title h1, html .wrapper header .title h1 {
+          width: auto;
+          line-height: 80px;
+          margin: 0; }
+        body .wrapper header .title .svg, html .wrapper header .title .svg {
+          display: inline-block;
+          width: 48px; }
+          body .wrapper header .title .svg svg, html .wrapper header .title .svg svg {
+            width: 100%;
+            display: block;
+            margin: 16px auto; }
+      body .wrapper header .color-select, html .wrapper header .color-select {
+        width: 15%;
+        padding: 0;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: distribute;
+        justify-content: space-around;
+        padding-right: 5%; }
+        body .wrapper header .color-select input[type="text"], html .wrapper header .color-select input[type="text"] {
+          display: inline-block;
+          width: 60%;
+          height: 30px;
           border-radius: 5px;
-          border: 2px solid white;
+          border: 1px solid #e0e0e0;
           -webkit-box-sizing: border-box;
           box-sizing: border-box;
-          z-index: 600;
-          -webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
-          box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5); }
-        .wrapper .colors-wrapper .colors .color:before {
-          content: "";
-          display: block;
-          padding-top: 100%;
-          /* 高さを幅の75%に固定 */ }
-        .wrapper .colors-wrapper .colors .color .color-code {
-          position: absolute;
-          top: 0;
-          left: 0;
-          bottom: 0;
-          right: 0; }
-    .wrapper .colors-wrapper .select {
-      padding: 50px 0 0; }
-
-footer {
-  height: 100px;
-  color: #606060;
-  text-align: center;
-  line-height: 100px; }
-  footer p {
-    margin: 0; }
+          margin-top: 25px;
+          font-size: 16px;
+          padding: 7px 10px; }
+        body .wrapper header .color-select input[type="color"], html .wrapper header .color-select input[type="color"] {
+          display: inline-block;
+          width: 30%;
+          height: 30px;
+          border-radius: 5px;
+          border: 1px solid #e0e0e0;
+          margin-top: 25px;
+          -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+    body .wrapper .colors-wrapper, html .wrapper .colors-wrapper {
+      padding-top: 80px; }
+      body .wrapper .colors-wrapper .percentage, html .wrapper .colors-wrapper .percentage {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 80px;
+        width: 90%;
+        margin: 0 auto;
+        z-index: 500;
+        background-color: #fafafa; }
+        body .wrapper .colors-wrapper .percentage div, html .wrapper .colors-wrapper .percentage div {
+          width: 4.76191%;
+          text-align: center;
+          color: #c0c0c0;
+          padding: 1rem 0;
+          overflow: hidden;
+          font-size: 1.2vw; }
+      body .wrapper .colors-wrapper .colors, html .wrapper .colors-wrapper .colors {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        width: 90%;
+        margin: 0 auto;
+        -ms-flex-pack: distribute;
+        justify-content: space-around; }
+        body .wrapper .colors-wrapper .colors .color, html .wrapper .colors-wrapper .colors .color {
+          position: relative;
+          width: 4.76191%;
+          background-color: black;
+          color: transparent;
+          text-align: center;
+          line-height: 50px;
+          font-size: 0.8vw;
+          overflow: hidden;
+          cursor: copy; }
+          @media screen and (min-width: 1024px) {
+            body .wrapper .colors-wrapper .colors .color:hover, html .wrapper .colors-wrapper .colors .color:hover {
+              -webkit-transform: scale(1.5);
+              -ms-transform: scale(1.5);
+              transform: scale(1.5);
+              border-radius: 5px;
+              border: 2px solid white;
+              -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+              z-index: 600;
+              -webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+              box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5); } }
+          body .wrapper .colors-wrapper .colors .color:before, html .wrapper .colors-wrapper .colors .color:before {
+            content: "";
+            display: block;
+            padding-top: 100%;
+            /* 高さを幅の75%に固定 */ }
+          body .wrapper .colors-wrapper .colors .color .color-code, html .wrapper .colors-wrapper .colors .color .color-code {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0; }
+      body .wrapper .colors-wrapper .select, html .wrapper .colors-wrapper .select {
+        padding: 50px 0 0; }
+  body footer, html footer {
+    height: 100px;
+    color: #606060;
+    text-align: center;
+    line-height: 100px; }
+    body footer p, html footer p {
+      margin: 0; }
